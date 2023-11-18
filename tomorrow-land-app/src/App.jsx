@@ -1,14 +1,22 @@
 import { Outlet } from "react-router-dom"
 import { Navbar, Footer} from "./components/UI Componets/index"
+import { Provider } from "react-redux"
+import { store } from './app/store'
+import { Toaster } from "react-hot-toast"
+
+
 
 function App() {
 
   return (
-    <div>
-        <Navbar />
-        <Outlet />
-        <Footer />  
-    </div>
+    <main className="w-screen overflow-x-hidden">
+        <Provider store={store}>
+            <Toaster />
+            <Navbar />
+            <Outlet />
+            <Footer />
+        </Provider>
+    </main>
   )
 }
 

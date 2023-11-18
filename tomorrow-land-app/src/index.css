@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+    font-family: Cera Medium;
+    src: url(../typemates_-_cera_pro_medium-webfont.ttf);
+}
+
+@font-face {
+    font-family: Cera Bold;
+    src: url(../typemates_-_cera_pro_bold-webfont.ttf);
+}
+
+@font-face {
+    font-family: Cera Regular;
+    src: url(../typemates_-_cera_pro_regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: Cera Light;
+    src: url(../typemates_-_cera_pro_light-webfont.ttf);
+}
+
+body, .shop-btn { font-family: Cera Medium; }
+
+/* p { font-family: Cera Light; } */
+
+.navP, p, span, input, .primary-btn { font-family: Cera Regular; }
+
+h1, h2, .jewelery, .collab-text { font-family: Cera Bold; }
+
+
+
+
+
+
+
+
+/* scrollbar */
+::-webkit-scrollbar { 
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
