@@ -10,99 +10,345 @@ export const swipFromTopValue = {
 export const womenItems = [
     {
         id: 1,
-        frontImage: '../../assets/Women/women1.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women1.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 2,
-        frontImage: '../../assets/Women/women2.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women2.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomengrey-_topman-JpgHighres-6.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-dark-grey.webp",
+            "../../assets/Women/color-pink.png",
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 3,
-        frontImage: '../../assets/Women/women3.webp'
+        title: 'FUSION T-SHIRT WOMEN',
+        frontImage: '../../assets/Women/women3.webp',
+        backImage: '../../assets/Women/fusiontshirtwomenwhite-_topman-JpgHighres-6.webp',
+        price: 5100.00,
+        description: "The Fusion T-shirt features a large Tomorrowland Icon embroidery in bright colours to make it pop. The spacing between lines adds depth and shows that we don't always have to colour inside the lines. Make your own rules with the Fusion T-shirt.",
+        color: [
+            "../../assets/Women/color-white.png",
+            "../../assets/Women/color-offwhite.webp",
+            "../../assets/Women/color-black.png",
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-black.png",
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 4,
-        frontImage: '../../assets/Women/women4.webp'
+        title: 'FUSION T-SHIRT WOMEN',
+        frontImage: '../../assets/Women/women4.webp',
+        backImage: '../../assets/Women/fusiontshirtwomenblack-_topman-JpgHighres-4.webp',
+        price: 5100.00,
+        description: "The Fusion T-shirt features a large Tomorrowland Icon embroidery in bright colours to make it pop. The spacing between lines adds depth and shows that we don't always have to colour inside the lines. Make your own rules with the Fusion T-shirt.",
+        color: [
+            "../../assets/Women/color-black.png",
+            "../../assets/Women/color-offwhite.webp",
+            "../../assets/Women/color-black.png",
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-white.png",
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 5,
-        frontImage: '../../assets/Women/women5.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women5.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 6,
-        frontImage: '../../assets/Women/women6.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women6.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 7,
-        frontImage: '../../assets/Women/women7.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women7.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 8,
-        frontImage: '../../assets/Women/women8.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women8.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 9,
-        frontImage: '../../assets/Women/women9.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women9.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 10,
-        frontImage: '../../assets/Women/women10.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women10.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 11,
-        frontImage: '../../assets/Women/women11.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women11.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 12,
-        frontImage: '../../assets/Women/women12.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women12.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 13,
-        frontImage: '../../assets/Women/women13.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women13.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 14,
-        frontImage: '../../assets/Women/women14.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women14.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 15,
-        frontImage: '../../assets/Women/women15.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women15.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 16,
-        frontImage: '../../assets/Women/women16.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women16.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 17,
-        frontImage: '../../assets/Women/women17.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women17.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 18,
-        frontImage: '../../assets/Women/women18.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women18.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 19,
-        frontImage: '../../assets/Women/women19.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women19.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 20,
-        frontImage: '../../assets/Women/women20.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women20.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 21,
-        frontImage: '../../assets/Women/women21.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women21.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 22,
-        frontImage: '../../assets/Women/women22.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women22.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 23,
-        frontImage: '../../assets/Women/women23.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women23.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 24,
-        frontImage: '../../assets/Women/women24.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/women24.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
 ]
 
@@ -110,27 +356,77 @@ export const humans = [
     {
         id: 1,
         text: 'T-SHIRTS',
-        frontImage: '../../assets/Women/womenposter1.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/womenposter1.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 2,
         text: 'SWEATSHIRTS',
-        frontImage: '../../assets/Women/womenposter2.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/womenposter2.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 3,
         text: 'ACCESSORIES',
-        frontImage: '../../assets/Women/womenposter3.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/womenposter3.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 4,
         text: 'CAPS',
-        frontImage: '../../assets/Women/womenposter4.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/womenposter4.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
     {
         id: 5,
         text: 'JEWELERY & WATCHES',
-        frontImage: '../../assets/Women/womenposter5.webp'
+        title: 'TOMORROWLAND T-SHIRT',
+        frontImage: '../../assets/Women/womenposter5.webp',
+        backImage: '../../assets/Women/tomorrowlandgradienttshirtwomenpink-_topman-JpgHighres-3.webp',
+        price: 6100.00,
+        description: 'The Tomorrowland T-shirt features large Tomorrowland lettering embroidery in bright colours on the front to make it pop.',
+        color: [
+            "../../assets/Women/color-pink.png",
+            "../../assets/Women/color-dark-grey.webp"
+        ],
+        size: ["XS", "S", "M", "L", "XL", "XL"],
+        fileName: "womenItems"
     },
 ]
 

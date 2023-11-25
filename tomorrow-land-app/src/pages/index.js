@@ -6,5 +6,6 @@ import Accessories from './Accessories'
 import Art from './Art'
 import Product from './Product'
 import Cart from './Cart'
+import WishList from './WishList'
 
-export { Home, Men, Women, Kids, Accessories, Art, Product, Cart } 
+export { Home, Men, Women, Kids, Accessories, Art, Product, Cart, WishList } 

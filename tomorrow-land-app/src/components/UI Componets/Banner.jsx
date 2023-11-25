@@ -17,15 +17,18 @@ const Banner = ({value}) => {
         </div>
 
         <div className='absolute bottom-0 z-10 w-full h-[40vh] bg-gradient-to-t from-neutral-900 to-transparent opacity-75'></div>
-        <div className='absolute flex flex-col gap-2 bottom-20 left-16 z-20'>
+        <div className='w-full absolute flex flex-col gap-2 bottom-10 z-20 text-center xl:bottom-20 xl:left-16 xl:w-fit'>
             {
                 value.description && <p className='text-white '>{value.description}</p>
             }
-            <h2 className='text-4xl tracking-wider text-white font-bold mb-4'>
+            <h2 className='text-4xl tracking-wider text-white font-bold mb-4 px-8 xl:px-0'>
                 {value.heading}
             </h2>
-            <button className='px-8 py-3 w-fit whitespace-nowrap tracking-widest text-white font-bold border border-white
-            hover:bg-white hover:text-black transition-all ease-in-out'>
+            <button className='relative left-1/2 -translate-x-1/2 px-8 py-2 w-fit whitespace-nowrap tracking-widest  font-bold 
+                bg-white text-black border border-white hover:bg-white hover:text-black transition-all ease-in-out
+                lg:py-3 lg:bg-transparent lg:text-white
+                xl:left-0 xl:translate-x-0
+            '>
                 {value.btn}
             </button>
         </div>

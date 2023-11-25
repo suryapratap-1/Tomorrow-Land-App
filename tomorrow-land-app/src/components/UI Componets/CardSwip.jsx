@@ -3,6 +3,7 @@ import { ItemsCard } from './index'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 const CardSwip = ({scrollLeft, scrollRight, category}) => {
+    // console.log(category);
   return (
     <section className=' relative w-screen py-8 flex flex-row gap-5 bg-white '>
         <button onClick={() => scrollLeft('.mens-collection')} 
@@ -17,7 +18,7 @@ const CardSwip = ({scrollLeft, scrollRight, category}) => {
         <div className='mens-collection scroll-smooth flex gap-5 overflow-x-hidden'>
             {
                 category.map((item) => (
-                    <ItemsCard key={item.id} item={item} items={category}/>
+                    <ItemsCard key={item.id} item={item} />
                 ))
             }
         </div>

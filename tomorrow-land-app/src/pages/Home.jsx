@@ -17,7 +17,7 @@ const Home = () => {
   }
 
   return (
-    <main className='w-full pt-16 overflow-x-hidden'>
+    <main className='w-screen pt-16 overflow-x-hidden'>
 
         <Banner value={homeBanner} />
 

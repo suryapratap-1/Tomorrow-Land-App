@@ -6,12 +6,13 @@ import { BiSolidHeart } from 'react-icons/bi'
 import { FiHeart } from 'react-icons/fi'
 import { useDispatch, useSelector } from 'react-redux'
 import { add, remove } from '../../features/add to cart/cartSlice'
+import { addWish, removeWish } from '../../features/wishlist/wishListSlice'
 import toast from 'react-hot-toast';
 
 const ItemsCard = ({item}) => {
     
-    const [liked, setLiked] = useState(false)
     const cart = useSelector(state => state.cart)
+    const wishlist = useSelector(state => state.wishlist)
     const dispatch = useDispatch()
 
     const addItem = () => {
@@ -20,25 +21,38 @@ const ItemsCard = ({item}) => {
     }
     const removeItem = () => {
         dispatch(remove(item.id))
-        toast.success('Item removed from cart')
+        toast.error('Item removed from cart')
+    }
+    const addWishList = () => {
+        dispatch(addWish(item))
+        toast.success('Added to wishlist')
+    }
+    const removeWishList = () => {
+        dispatch(removeWish(item.id))
+        toast.error('Removed from wishlist')
     }
 
     return (
         <div>
             <div className='relative w-[21vw] flex flex-col gap-3 tracking-wider'>
-                <div onClick={() => setLiked(!liked)}
-                    className='absolute right-3 top-3 hover:scale-110'>
+                <div className='absolute right-3 top-3 hover:scale-110'>
                     {
-                        liked ? <BiSolidHeart fontSize={"1.2rem"} /> : <FiHeart fontSize={"1.2rem"} />
+                        wishlist.some((p) => p.id == item.id) ?
+                        <button onClick={removeWishList}>
+                            <BiSolidHeart fontSize={"1.2rem"} />
+                        </button> :
+                        <button onClick={addWishList}>
+                            <FiHeart fontSize={"1.2rem"} />
+                        </button>
                     }
                 </div>
-                <NavLink to={`product/${item.id}`}>
+                <NavLink to={`product/${item.fileName}/${item.id}`}>
                     <img src={item.frontImage} className='w-full' alt="front image" />
                 </NavLink>
                 <div className='flex flex-col gap-2 px-3'>
                     <h3>{item.title}</h3>
                     <div className='flex justify-between'>
-                        <p>{item.price}</p>
+                        <p>Rs {item.price}</p>
                         <div className='flex gap-2'>
                             {
                                 item.color.map((color, index) => (

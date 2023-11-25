@@ -26,7 +26,7 @@
 
 body, .shop-btn { font-family: Cera Medium; }
 
-/* p { font-family: Cera Light; } */
+.navbar { font-family: Cera Light; }
 
 .navP, p, span, input, .primary-btn { font-family: Cera Regular; }
 
@@ -55,4 +55,11 @@ h1, h2, .jewelery, .collab-text { font-family: Cera Bold; }
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;
+}
+
+.side-nav-sidebar::-webkit-scrollbar { 
+    width: 4px;
+}
+.side-nav-sidebar::-webkit-scrollbar-track {
+    background: transparent; 
 }

@@ -13,12 +13,14 @@ const Cart = () => {
 
     const [totalAmout, setTotalAmount] = useState(0);
     useEffect(() => {
-        setTotalAmount( cart.reduce((accumulator, current) => accumulator + current.price, 0) )
+        let sum = cart.reduce((acc, current) => acc + current.price, 0)
+        console.log(sum);
+        setTotalAmount( sum )
     }, [cart])
 
     const removeItem = (cart) => {
         dispatch(remove(cart.id))
-        toast.success('Item removed from cart')
+        toast.error('Item removed from cart')
     }
 
     return (
@@ -36,11 +38,11 @@ const Cart = () => {
                     </div>
                 ) :
                 (   
-                    <div className='flex flex-row'>
-                        <div className='no-scrollbar w-[60%] h-[78vh] flex flex-col gap-10  overflow-y-auto  '>
+                    <div className='flex flex-row gap-16'>
+                        <div className='no-scrollbar w-[60%] h-[78vh] flex flex-col gap-10  overflow-y-auto'>
                             {
                                 cart.map((cart) => (
-                                    <div key={cart.id} className='flex flex-row gap-10'>
+                                    <div key={cart.id} className='flex flex-row pb-2 gap-10 border-b-2 border-gray-500'>
                                         <img src={cart.frontImage} className='w-[16vw]' alt="" />
                                         <div className='flex flex-col gap-5 py-6 pr-16'>
                                             <h2 className='text-3xl'>{cart.title}</h2>
@@ -57,10 +59,26 @@ const Cart = () => {
                                 ))
                             }
                         </div>
-                        <div className='w-[40%] flex flex-col gap-4 px-4'>
-                            <h2 className='text-3xl py-1 mb-4 text-center bg-green-500 text-white  rounded-md'>Your Cart</h2>
-                            <h3 className='text-2xl'>Total Items: {cart.length}</h3>
-                            <h3 className='text-2xl '>Total Amount: {totalAmout}</h3>
+                        <div className='w-[40%] mt-10 flex flex-col gap-[40%] pl-4 pr-28'>
+                            <div className='flex flex-col gap-4'>
+                                <h2 className='text-4xl py-2 text-black  rounded-md'>Your</h2>
+                                <h2 className='text-6xl text-green-700'>Cart List</h2>
+                                <h3 className='text-2xl text-gray-700'>Total Items: 
+                                    <span className='text-black font-bold'> {cart.length}</span>
+                                </h3>
+                            </div>
+                            <div className='flex flex-col gap-8'>
+                                <h3 className='text-2xl text-gray-700 '>Total Amount: 
+                                    <span className='text-black font-bold'> Rs {totalAmout}</span>
+                                </h3>
+                                <NavLink to='/'>
+                                    <button className='w-full text-3xl py-2 mb-4 text-center bg-green-700 text-white  rounded-md
+                                        hover:scale-95 hover:shadow-xl
+                                    '>
+                                        Shop More
+                                    </button>
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
                     

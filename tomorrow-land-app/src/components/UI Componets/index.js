@@ -13,8 +13,11 @@ import Collage from './Collage'
 import ButtonUI from './ButtonUI'
 import ProductCards from './ProductCards'
 import Card from './Card'
+import Navlinks from './Navlinks'
+import SideNavLinks from './SideNavLinks'
+
 
 export { 
     Navbar, Footer, ItemsCard, CollectionCard, ShowNavItems, HomePageIntro, CardSwipTopBtn, DualContent,
-    CardSwip, DesriptionCardSwip, Banner, Collage, ButtonUI, ProductCards, Card
+    CardSwip, DesriptionCardSwip, Banner, Collage, ButtonUI, ProductCards, Card, Navlinks, SideNavLinks
 }
