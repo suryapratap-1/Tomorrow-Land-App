@@ -101,13 +101,13 @@ export const mensTShirt = [
 ]
 
 export const mensData = {
-    homeImage: '../../assets/MenPage.webp',
+    homeImage: '/assets/MenPage.webp',
     homeText: 'ALL CLOTHING',
 }
 
 export const value = {
-  img1: '../../assets/Men Dual Image 1.webp',
-  img2: '../../assets/Men Dual Image 2.webp',
+  img1: '/assets/Men Dual Image 1.webp',
+  img2: '/assets/Men Dual Image 2.webp',
   text1: 'TOMORROWLAND x LOOP EARPLUG',
   text2: 'TOMORROWLAND x JBL HEADPHONE',
   btn1: 'SHOP NOW', 
@@ -121,7 +121,7 @@ export const descSectionCard = {
   text: '1500 underprivileged girls, who live inside the largest slums of Kolkata, can now attend dance, music and art classes. Based on the drawings created in these classes, an exclusive capsule collection was made. All profits of this collection will be donated to the projects of the Tomorrowland Foundation.'
 }
 export const banner = {
-  img: '../../assets/NOS-Official-Tomorrowland-Flag-TML_0003_180721-210537-TML2018-FilleRoelants-2.webp',
+  img: '/assets/NOS-Official-Tomorrowland-Flag-TML_0003_180721-210537-TML2018-FilleRoelants-2.webp',
   heading: 'OFFICIAL TOMORROWLAND FLAG',
   btn: 'DISCOVER NOW'
 }
@@ -130,19 +130,19 @@ export const collage = {
   btn: 'DISCOVER ALL',
   cardsDetail: [
     {
-      image: '../assets/stmpd-story1.jpg',
+      image: '/assets/stmpd-story1.jpg',
       text: 'STMPD RCRDS x TOMORROWLAND'
     },
     {
-      image: '../assets/foundation-blog.webp',
+      image: '/assets/foundation-blog.webp',
       text: 'FOUNDATION COLLECTION'
     },
     {
-      image: '../assets/tmlxloop-gold-model.webp',
+      image: '/assets/tmlxloop-gold-model.webp',
       text: 'TOMORROWLAND x LOOP'
     },
     {
-      image: '../assets/homepage_banner_BAOBAB.webp',
+      image: '/assets/homepage_banner_BAOBAB.webp',
       text: 'TOMORROWLAND X BAOBAB'
     }
   ],
@@ -154,26 +154,26 @@ export const humans = [
   {
       id: 1,
       text: 'T-SHIRTS',
-      frontImage: '../../assets/Human 1.webp'
+      frontImage: '/assets/Human 1.webp'
   },
   {
       id: 2,
       text: 'SWEATSHIRTS',
-      frontImage: '../../assets/Human 2.webp'
+      frontImage: '/assets/Human 2.webp'
   },
   {
       id: 3,
       text: 'ACCESSORIES',
-      frontImage: '../../assets/Human 3.webp'
+      frontImage: '/assets/Human 3.webp'
   },
   {
       id: 4,
       text: 'CAPS',
-      frontImage: '../../assets/Human 4.webp'
+      frontImage: '/assets/Human 4.webp'
   },
   {
       id: 5,
       text: 'JEWELERY & WATCHES',
-      frontImage: '../../assets/Human 5.webp'
+      frontImage: '/assets/Human 5.webp'
   },
 ]

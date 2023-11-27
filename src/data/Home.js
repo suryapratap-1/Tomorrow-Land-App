@@ -1,11 +1,11 @@
 export const dualContentValue = {
-    img1: '../../assets/shop_men.webp',
-    img2: '../../assets/shop_women.webp',
+    img1: '/assets/shop_men.webp',
+    img2: '/assets/shop_women.webp',
     btn1: 'SHOP NOW',
     btn2: 'SHOP NOW'
 }
 export const dualContentVid = {
-    img1: '../../assets/book-header-mobile.webp',
+    img1: '/assets/book-header-mobile.webp',
     video2: 'https://cdn.shopify.com/videos/c/vp/25e511d8cb1b4524ab871c64d7519ceb/25e511d8cb1b4524ab871c64d7519ceb.HD-1080p-3.3Mbps-16020325.mp4',
     btn1: 'SHOP FESTIVAL BOOK',
     btn2: 'SHOP EARPLUGS'
@@ -24,7 +24,7 @@ export const homeBanner = {
     btn: 'DISCOVER NOW'
 }
 export const banner1 = {
-    img:'../../assets/vase-desktop.webp',
+    img:'/assets/vase-desktop.webp',
     heading: 'BOABAB COLLECTION x TOMORROWLAND',
     btn: 'SHOP NOW'
 }
@@ -33,19 +33,19 @@ export const collage = {
     btn: 'DISCOVER ALL',
     cardsDetail: [
         {
-            image: '../assets/stmpd-story1.jpg',
+            image: '/assets/stmpd-story1.jpg',
             text: 'STMPD RCRDS x TOMORROWLAND'
         },
         {
-            image: '../assets/foundation-blog.webp',
+            image: '/assets/foundation-blog.webp',
             text: 'FOUNDATION COLLECTION'
         },
         {
-            image: '../assets/tmlxloop-gold-model.webp',
+            image: '/assets/tmlxloop-gold-model.webp',
             text: 'TOMORROWLAND x LOOP'
         },
         {
-            image: '../assets/TML-Solo-Vida-Green-Velvet-PORTRAIT.webp',
+            image: '/assets/TML-Solo-Vida-Green-Velvet-PORTRAIT.webp',
             text: 'SOLO VIDA'
         }
     ],

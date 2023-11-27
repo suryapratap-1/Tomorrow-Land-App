@@ -1,63 +1,63 @@
 export const drawings = [
     {
         id: 1,
-        frontImage: '../../assets/Art/d1.webp'
+        frontImage: '/assets/Art/d1.webp'
     },
     {
         id: 2,
-        frontImage: '../../assets/Art/d2.webp'
+        frontImage: '/assets/Art/d2.webp'
     },
     {
         id: 3,
-        frontImage: '../../assets/Art/d3.webp'
+        frontImage: '/assets/Art/d3.webp'
     },
     {
         id: 4,
-        frontImage: '../../assets/Art/d4.webp'
+        frontImage: '/assets/Art/d4.webp'
     },
     {
         id: 5,
-        frontImage: '../../assets/Art/d5.webp'
+        frontImage: '/assets/Art/d5.webp'
     },
     {
         id: 6,
-        frontImage: '../../assets/Art/d6.webp'
+        frontImage: '/assets/Art/d6.webp'
     },
     {
         id: 7,
-        frontImage: '../../assets/Art/d7.webp'
+        frontImage: '/assets/Art/d7.webp'
     },
     {
         id: 8,
-        frontImage: '../../assets/Art/d8.webp'
+        frontImage: '/assets/Art/d8.webp'
     },
     {
         id: 9,
-        frontImage: '../../assets/Art/d9.webp'
+        frontImage: '/assets/Art/d9.webp'
     },
     {
         id: 10,
-        frontImage: '../../assets/Art/d10.webp'
+        frontImage: '/assets/Art/d10.webp'
     },
     {
         id: 11,
-        frontImage: '../../assets/Art/d11.webp'
+        frontImage: '/assets/Art/d11.webp'
     },
     {
         id: 12,
-        frontImage: '../../assets/Art/d12.webp'
+        frontImage: '/assets/Art/d12.webp'
     },
     {
         id: 13,
-        frontImage: '../../assets/Art/d13.webp'
+        frontImage: '/assets/Art/d13.webp'
     },
     {
         id: 14,
-        frontImage: '../../assets/Art/d14.webp'
+        frontImage: '/assets/Art/d14.webp'
     },
     {
         id: 15,
-        frontImage: '../../assets/Art/d15.webp'
+        frontImage: '/assets/Art/d15.webp'
     },
 ]
 
@@ -69,51 +69,51 @@ export const drawingDescription = {
 export const paintings = [
     {
         id: 1,
-        frontImage: '../../assets/Art/p1.webp'
+        frontImage: '/assets/Art/p1.webp'
     },
     {
         id: 2,
-        frontImage: '../../assets/Art/p2.webp'
+        frontImage: '/assets/Art/p2.webp'
     },
     {
         id: 3,
-        frontImage: '../../assets/Art/p3.webp'
+        frontImage: '/assets/Art/p3.webp'
     },
     {
         id: 4,
-        frontImage: '../../assets/Art/p4.webp'
+        frontImage: '/assets/Art/p4.webp'
     },
     {
         id: 5,
-        frontImage: '../../assets/Art/p5.webp'
+        frontImage: '/assets/Art/p5.webp'
     },
     {
         id: 6,
-        frontImage: '../../assets/Art/p6.webp'
+        frontImage: '/assets/Art/p6.webp'
     },
     {
         id: 7,
-        frontImage: '../../assets/Art/p7.webp'
+        frontImage: '/assets/Art/p7.webp'
     },
     {
         id: 8,
-        frontImage: '../../assets/Art/p8.webp'
+        frontImage: '/assets/Art/p8.webp'
     },
     {
         id: 9,
-        frontImage: '../../assets/Art/p9.webp'
+        frontImage: '/assets/Art/p9.webp'
     },
     {
         id: 10,
-        frontImage: '../../assets/Art/p10.webp'
+        frontImage: '/assets/Art/p10.webp'
     },
     {
         id: 11,
-        frontImage: '../../assets/Art/p11.webp'
+        frontImage: '/assets/Art/p11.webp'
     },
     {
         id: 12,
-        frontImage: '../../assets/Art/p12.webp'
+        frontImage: '/assets/Art/p12.webp'
     },
 ]
 
