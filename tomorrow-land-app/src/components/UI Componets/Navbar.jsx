@@ -83,7 +83,7 @@ const Navbar = () => {
                                 {
                                     // wishlist.length &&
                                     <div className={`${wishlist.length > 0 ? "block" : "hidden"} 
-                                        absolute -top-2.5 left-3 animate-bounce text-sm px-1.5 bg-white rounded-full
+                                        absolute -top-2.5 left-3 animate-bounce text-sm px-[7px] bg-white rounded-full
                                         font-bold`}>
                                         {wishlist?.length}
                                     </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                                 {
                                     // cart.length &&
                                     <div className={`${cart.length > 0 ? "block" : "hidden"} 
-                                        absolute -top-2.5 left-3 animate-bounce text-sm px-1.5 bg-white rounded-full 
+                                        absolute -top-2.5 left-3 animate-bounce text-sm px-[7px] bg-white rounded-full 
                                         font-bold`}>
                                         {cart?.length}
                                     </div>

@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Cera Medium;
-    src: url(../typemates_-_cera_pro_medium-webfont.ttf);
+    src: url(../typemates_-_cera_pro_medium-webfont.ttf) format('truetype');    
 }
 
 @font-face {

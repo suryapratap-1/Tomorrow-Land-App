@@ -3,6 +3,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RxCross1 } from "react-icons/rx";
 import { FiMinus } from 'react-icons/fi';
 import { AiOutlinePlus } from 'react-icons/ai'
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaLink } from "react-icons/fa6";
 import { removeWish } from '../features/wishlist/wishListSlice';
 import { add, remove } from '../features/add to cart/cartSlice'
 import { NavLink } from 'react-router-dom';
@@ -28,6 +33,18 @@ const WishList = () => {
 
     return (
         <main className='mt-16 py-12 px-24 text-black'>
+            <div className='w-full'>
+                <div className='flex flex-row justify-between items-center'>
+                    <h2 className='text-3xl'>My wishlist</h2>
+                    <div className='flex flex-row gap-4 items-center'>
+                        <FaFacebookF fontSize={"1.2rem"} />
+                        <FaTwitter fontSize={"1.2rem"} />
+                        <FaWhatsapp fontSize={"1.2rem"} />
+                        <IoIosMail fontSize={"1.5rem"} />
+                        <FaLink fontSize={"1.3rem"} />
+                    </div>
+                </div>
+            </div>
             {
                 wishlist === undefined || wishlist.length == 0 ?
                     (

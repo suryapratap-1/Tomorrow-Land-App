@@ -34,7 +34,7 @@ const ItemsCard = ({item}) => {
 
     return (
         <div>
-            <div className='relative w-[21vw] flex flex-col gap-3 tracking-wider'>
+            <div className='relative lg:w-[21vw] max-[426px]:w-screen flex flex-col gap-3 tracking-wider'>
                 <div className='absolute right-3 top-3 hover:scale-110'>
                     {
                         wishlist.some((p) => p.id == item.id) ?

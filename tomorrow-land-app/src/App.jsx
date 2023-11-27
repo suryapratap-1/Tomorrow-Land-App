@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast"
 function App() {
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="w-screen overflow-x-hidden">
         <Provider store={store}>
             <Toaster />
             <Navbar />

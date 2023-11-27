@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = ({value}) => {
   return (
-    <section className='relative'>
+    <section className='w-full relative'>
         <div className='w-full h-[calc(100vh-56px)] z-0'>
             {
                 value.img &&

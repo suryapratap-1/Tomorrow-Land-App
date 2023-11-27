@@ -3,7 +3,6 @@ import { CollectionCard } from './index'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 const DesriptionCardSwip = ({scrollLeft, scrollRight, category, value, like, id}) => {
-    // console.log(category);
 
     return (
         <section className='pb-8'>
@@ -13,7 +12,7 @@ const DesriptionCardSwip = ({scrollLeft, scrollRight, category, value, like, id}
                     value.text && <p>{value.text}</p>
                 }
             </div>
-            <div className={`collection ${id} scroll-smooth flex gap-5 overflow-x-hidden`}>
+            <div className={`collection relative ${id} scroll-smooth flex gap-5 overflow-x-hidden`}>
                 <button onClick={() => scrollLeft(`.${id}`)} 
                     className='absolute z-20 h-[80%] flex justify-center items-center w-20'>
                     <AiOutlineLeft  fontSize={'1.8rem'} />
