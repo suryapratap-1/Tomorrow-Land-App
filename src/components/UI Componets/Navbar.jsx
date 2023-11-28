@@ -14,8 +14,8 @@ import { useSelector } from 'react-redux'
 // } 
 
 const Navbar = () => {
-    const params = useParams()
-    console.log(params);
+    // const params = useParams()
+    // console.log(params);
     
     
     const cart = useSelector(state => state.cart)

@@ -25,6 +25,7 @@ export const homeBanner = {
 }
 export const banner1 = {
     img:'/assets/vase-desktop.webp',
+    mobile: '/assets/vase-mobile.webp',
     heading: 'BOABAB COLLECTION x TOMORROWLAND',
     btn: 'SHOP NOW'
 }

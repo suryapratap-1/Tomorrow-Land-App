@@ -6,7 +6,7 @@ import { BsInstagram, BsTwitter } from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer className='w-full px-4 pt-10 bg-black md:px-16 overflow-x-hidden'>
-        <div className='flex flex-row gap-[12vw] pb-10 border-b border-gray-800'>
+        <div className='flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-row gap-[12vw] pb-10 border-b border-gray-800'>
             <div className='flex flex-col gap-5'>
                 <NavLink to='/'>
                     <svg width="180" height="40" viewBox="0 0 132 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,7 @@ const Footer = () => {
             <div className='flex flex-col gap-5'>
                 <h4 className='text-sm font-ceraRegular tracking-wider text-gray-300'>DON'T WANT TO MISS OUT?</h4>
                 <p className='text-base font-ceraRegular tracking-wider text-gray-300'>Be the first to know about new product releases, limited edition items and much more</p>
-                <button className='mr-28 border px-10 py-3 font-semibold text-sm tracking-wider font-ceraRegular text-gray-300
+                <button className='mr-28 border w-full min-[425px]:w-fit px-10 py-3 font-semibold text-sm tracking-wider font-ceraRegular text-gray-300
                     hover:bg-white hover:text-black transition-all ease-in-out'>
                     SUBSCRIBE
                 </button>

@@ -9,11 +9,15 @@ import { dualContentValue, dualContentVid, swipFromTopValue, descSectionCard, ho
 const Home = () => {
   const ItemsScrollLeft = (clsName) => {
     const box = document.querySelector(`${clsName}`);
-    box.scrollLeft -= 350; 
+    // console.log(box);
+    if (box.clientWidth > 767) box.scrollLeft -= box.clientWidth / 2; 
+    else box.scrollLeft -= box.clientWidth; 
   }
   const ItemsScrollRight = (clsName) => {
     const box = document.querySelector(`${clsName}`);
-    box.scrollLeft += 350; 
+    // console.log(box.clientWidth);
+    if (box.clientWidth > 767) box.scrollLeft += box.clientWidth / 2
+    else box.scrollLeft += box.clientWidth; 
   }
 
   return (
@@ -40,6 +44,7 @@ const Home = () => {
         <Banner value={banner1} />
 
         <DesriptionCardSwip 
+            id={"homepage-desc-scroll"}
             scrollLeft={ItemsScrollLeft}
             scrollRight={ItemsScrollRight}
             like={true}

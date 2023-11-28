@@ -4,15 +4,14 @@ import { BiSolidHeart } from 'react-icons/bi'
 import { FiHeart } from 'react-icons/fi'
 
 const ItemsCard = ({item, like}) => {
-    // console.log(item.fileName);
     const [liked, setLiked] = useState(false)
 
     return (
         <div>
-            <div className='relative w-[21vw] h-[550px] flex flex-row gap-3 tracking-wider'>
+            <div className='relative xl:w-[21vw] max-[426px]:w-screen min-[426px]:w-[300px] flex flex-row gap-3 tracking-wider'>
                 {
                     like && 
-                    <div onClick={() => setLiked(!liked)} className='absolute right-3 top-3 hover:scale-110'>
+                    <div onClick={() => setLiked(!liked)} className='absolute right-5 top-3 hover:scale-110'>
                         {
                             liked ? <BiSolidHeart fontSize={"1.2rem"} /> : <FiHeart fontSize={"1.2rem"} />
                         }

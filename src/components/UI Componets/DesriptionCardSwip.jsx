@@ -5,22 +5,22 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 const DesriptionCardSwip = ({scrollLeft, scrollRight, category, value, like, id}) => {
 
     return (
-        <section className='pb-8'>
-            <div className='flex flex-col gap-5 px-16 py-8'>
-                <h2 className='jewelery text-3xl'>{value.heading}</h2>
+        <section className='relative h-fit pb-8'>
+            <div className='flex flex-col gap-5 px-4 py-4 md:px-16  md:py-8'>
+                <h2 className='jewelery text-lg md:text-3xl'>{value.heading}</h2>
                 {
-                    value.text && <p>{value.text}</p>
+                    value.text && <p className='max-[426px]:text-[0.9rem] min-[425px]:text-base'>{value.text}</p>
                 }
             </div>
-            <div className={`collection relative ${id} scroll-smooth flex gap-5 overflow-x-hidden`}>
                 <button onClick={() => scrollLeft(`.${id}`)} 
-                    className='absolute z-20 h-[80%] flex justify-center items-center w-20'>
+                    className='hidden md:flex absolute z-20 left-[2%] top-[60%] justify-center items-center w-20'>
                     <AiOutlineLeft  fontSize={'1.8rem'} />
                 </button>
                 <button onClick={() => scrollRight(`.${id}`)}
-                    className='absolute z-20 left-[94%] h-[80%] flex justify-center items-center w-20'>
+                    className='hidden md:flex absolute z-20 right-[2%] top-[60%] justify-center items-center w-20'>
                     <AiOutlineRight  fontSize={'1.8rem'} />
                 </button>
+            <div className={`${id} no-scrollbar scroll-smooth flex gap-5 overflow-x-auto md:overflow-x-hidden`}>
                 <>
                     {
                         category.map((item, id) => (
