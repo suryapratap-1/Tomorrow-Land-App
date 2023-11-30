@@ -1,25 +1,44 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FiHeart } from 'react-icons/fi'
+import { useDispatch, useSelector } from 'react-redux'
+import { addWish, removeWish } from '../../features/wishlist/wishListSlice'
+import toast from 'react-hot-toast';
 
 const ItemsCard = ({item, like}) => {
-    const [liked, setLiked] = useState(false)
+    const wishlist = useSelector(state => state.wishlist)
+    const dispatch = useDispatch()
+
+    const addWishList = () => {
+        dispatch(addWish(item))
+        toast.success('Added to wishlist')
+    }
+    const removeWishList = () => {
+        dispatch(removeWish(item.id))
+        toast.error('Removed from wishlist')
+    }
 
     return (
         <div>
-            <div className='relative xl:w-[21vw] max-[426px]:w-screen min-[426px]:w-[300px] flex flex-row gap-3 tracking-wider'>
+            <div className='relative xl:w-[21vw] h-full max-[426px]:w-screen min-[426px]:w-[300px] flex flex-row gap-3 tracking-wider'>
                 {
                     like && 
-                    <div onClick={() => setLiked(!liked)} className='absolute right-5 top-3 hover:scale-110'>
+                    <div className='absolute right-5 top-3 hover:scale-110'>
                         {
-                            liked ? <BiSolidHeart fontSize={"1.2rem"} /> : <FiHeart fontSize={"1.2rem"} />
+                            wishlist.some((p) => p.id == item.id) ?
+                            <button onClick={removeWishList}>
+                                <BiSolidHeart fontSize={"1.2rem"} />
+                            </button> :
+                            <button onClick={addWishList}>
+                                <FiHeart fontSize={"1.2rem"} />
+                            </button>
                         }
                     </div>
                 }
                 <NavLink to={`/product/${item.fileName}/${item.id}`}>
-                    <div className='overflow-hidden'>
-                        <img src={item.frontImage} className='w-full h-full object-cover hover:scale-105 transition-all duration-500' alt="front image" />
+                    <div className='h-full overflow-hidden'>
+                        <img src={item.frontImage} className='w-full h-full object-cover' alt="front image" />
                     </div>
                 </NavLink>
                 {

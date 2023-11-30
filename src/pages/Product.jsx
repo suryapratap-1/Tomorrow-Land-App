@@ -9,12 +9,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { add, remove } from '../features/add to cart/cartSlice';
 import { collection } from '../data/Collection';
 import { womenItems } from '../data/Women';
+import { kidsItems } from '../data/Kids'
 
 const CATEGORY = {
     'HomePageMensTShirt': HomePageMensTShirt,
     'jewelery': jewelery,
     'collection': collection,
-    'womenItems': womenItems
+    'womenItems': womenItems,
+    'kidsItems' : kidsItems
 }
 
 const Product = () => {
@@ -68,7 +70,7 @@ const Product = () => {
                             <div key={id} className='flex flex-col gap-8'>
                                 <h3 className='text-3xl font-bold'>{item.title}</h3>
                                 <p className='text-xl'>Rs {item.price}</p>
-                                <p className='text-lg tracking-wide'>{item.description}</p>
+                                <p className='text-base tracking-wide'>{item.description}</p>
                                 <div className='flex flex-col gap-3'>
                                     <p>Color</p>
                                     <div className='flex flex-row gap-3 items-center'>
@@ -76,7 +78,7 @@ const Product = () => {
                                             item.color.map((color, index) => (
                                                 // typeof(color) === String ? 
                                                 // <div key={index} className={`w-8 h-8 rounded-full border bg-[${color}]`} /> :
-                                                <button className='w-8 h-8 rounded-full border border-black'>
+                                                <button className='w-6 h-6 rounded-full border border-black'>
                                                     <img src={color} className='w-full h-full rounded-full object-cover' alt="item-color" />
                                                 </button>
                                             ))

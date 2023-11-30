@@ -9,13 +9,11 @@ import { dualContentValue, dualContentVid, swipFromTopValue, descSectionCard, ho
 const Home = () => {
   const ItemsScrollLeft = (clsName) => {
     const box = document.querySelector(`${clsName}`);
-    // console.log(box);
     if (box.clientWidth > 767) box.scrollLeft -= box.clientWidth / 2; 
     else box.scrollLeft -= box.clientWidth; 
   }
   const ItemsScrollRight = (clsName) => {
     const box = document.querySelector(`${clsName}`);
-    // console.log(box.clientWidth);
     if (box.clientWidth > 767) box.scrollLeft += box.clientWidth / 2
     else box.scrollLeft += box.clientWidth; 
   }

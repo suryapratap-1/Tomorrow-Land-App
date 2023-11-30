@@ -10,7 +10,7 @@ const Kids = () => {
   const [show, setShow] = useState(false)
 
   return (
-    <main className='pt-20 px-16 text-black'>
+    <main className='pt-20 px-4 md:px-16 text-black'>
       <header className='flex flex-col gap-6 py-2'>
           <NavLink to='/'>
             <div className='flex flex-row items-center gap-2'>
@@ -18,7 +18,7 @@ const Kids = () => {
               <p>Home</p>
             </div>
           </NavLink>
-          <h1 className='text-4xl text-center'>KIDS</h1>
+          <h1 className='text-4xl text-left md:text-center'>KIDS</h1>
           <div className='flex flex-row justify-between'>
             <p>6 products</p>
             <div className='relative flex flex-row items-center gap-2'>
@@ -29,8 +29,7 @@ const Kids = () => {
                 <BsChevronDown fontSize='o.8rem' className={`${show ? '-rotate-180' : 'rotate-0'} transition-all duration-300`} />
               </button>
               <div 
-                className={`absolute z-20 top-7 right-0 w-32 h-36 bg-white border border-black overflow-y-auto 
-                          ${show ? 'block' : 'hidden'}`}>
+                className={`absolute z-20 top-7 right-0 w-32 h-36 bg-white border border-black overflow-y-auto ${show ? 'block' : 'hidden'}`}>
                 <p className='px-4 hover:bg-gray-100 cursor-pointer'>Best selling</p>
                 <p className='px-4 hover:bg-gray-100 cursor-pointer'>Price, low to high</p>
                 <p className='px-4 hover:bg-gray-100 cursor-pointer'>Price, high to low</p>
