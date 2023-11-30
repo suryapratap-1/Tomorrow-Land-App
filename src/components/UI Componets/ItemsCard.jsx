@@ -62,7 +62,11 @@ const ItemsCard = ({item}) => {
                         </div>
                     </div>
                     <div className='flex flex-row justify-between'>
-                        <p className='text-sm'>Add to cart</p>
+                        {
+                            cart.some(p => p.id == item.id) ? 
+                            <p className='text-sm'>Remove from cart</p> :
+                            <p className='text-sm'>Add to cart</p>
+                        }
                         <button>
                             {
                                 cart.some((p) =>  p.id == item.id) ? 
