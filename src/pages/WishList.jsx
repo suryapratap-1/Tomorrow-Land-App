@@ -32,9 +32,9 @@ const WishList = () => {
     }
 
     return (
-        <main className='mt-16 py-12 px-24 text-black'>
-            <div className='w-full'>
-                <div className='flex flex-row justify-between items-center'>
+        <main className='mt-16 p-4 lg:px-16 lg:py-8 xl:py-12 xl:px-24 text-black'>
+            <div className='w-full pb-5 mb-6 border-b border-black'>
+                <div className='flex flex-col items-start gap-2 md:flex-row md:justify-between md:items-center'>
                     <h2 className='text-3xl'>My wishlist</h2>
                     <div className='flex flex-row gap-4 items-center'>
                         <FaFacebookF fontSize={"1.2rem"} />
@@ -58,10 +58,10 @@ const WishList = () => {
                         </div>
                     ) :
                     (
-                        <div className='flex flex-row gap-10'>
+                        <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-10'>
                             {
                                 wishlist.map((item) => (
-                                    <div key={item.id} className='relative w-[21vw] flex flex-col gap-3 tracking-wider'>
+                                    <div key={item.id} className='relative xl:w-[21vw] flex flex-col gap-3 tracking-wider'>
                                         <div className='absolute right-3 top-3 hover:scale-110'>
                                             {
                                                 <button onClick={() => removeWishList(item.id)}>
