@@ -7,55 +7,55 @@ import { dualContentValue, dualContentVid, swipFromTopValue, descSectionCard, ho
 
 
 const Home = () => {
-  const ItemsScrollLeft = (clsName) => {
-    const box = document.querySelector(`${clsName}`);
-    if (box.clientWidth > 767) box.scrollLeft -= box.clientWidth / 2; 
-    else box.scrollLeft -= box.clientWidth; 
-  }
-  const ItemsScrollRight = (clsName) => {
-    const box = document.querySelector(`${clsName}`);
-    if (box.clientWidth > 767) box.scrollLeft += box.clientWidth / 2
-    else box.scrollLeft += box.clientWidth; 
-  }
+    const ItemsScrollLeft = (clsName) => {
+        const box = document.querySelector(`${clsName}`);
+        if (box.clientWidth > 767) box.scrollLeft -= box.clientWidth / 2; 
+        else box.scrollLeft -= box.clientWidth; 
+    }
+    const ItemsScrollRight = (clsName) => {
+        const box = document.querySelector(`${clsName}`);
+        if (box.clientWidth > 767) box.scrollLeft += box.clientWidth / 2
+        else box.scrollLeft += box.clientWidth; 
+    }
 
-  return (
-    <main className='w-screen pt-16 overflow-x-hidden'>
+    return (
+        <main className='w-screen pt-16 overflow-x-hidden'>
 
-        <Banner value={homeBanner} />
+            <Banner value={homeBanner} />
 
-        <CardSwip 
-            scrollLeft={ItemsScrollLeft}
-            scrollRight={ItemsScrollRight}
-            category={HomePageMensTShirt}
-        />
+            <CardSwip 
+                scrollLeft={ItemsScrollLeft}
+                scrollRight={ItemsScrollRight}
+                category={HomePageMensTShirt}
+            />
 
-        <DualContent value = {dualContentValue} />
+            <DualContent value = {dualContentValue} />
 
-        <CardSwipTopBtn 
-            scrollLeft={ItemsScrollLeft}
-            scrollRight={ItemsScrollRight}
-            like={true}
-            category={jewelery}
-            value = {swipFromTopValue}
-        />
+            <CardSwipTopBtn 
+                scrollLeft={ItemsScrollLeft}
+                scrollRight={ItemsScrollRight}
+                like={true}
+                category={jewelery}
+                value = {swipFromTopValue}
+            />
 
-        <Banner value={banner1} />
+            <Banner value={banner1} />
 
-        <DesriptionCardSwip 
-            id={"homepage-desc-scroll"}
-            scrollLeft={ItemsScrollLeft}
-            scrollRight={ItemsScrollRight}
-            like={true}
-            category={collection}
-            value = {descSectionCard}
-        />
+            <DesriptionCardSwip 
+                id={"homepage-desc-scroll"}
+                scrollLeft={ItemsScrollLeft}
+                scrollRight={ItemsScrollRight}
+                like={true}
+                category={collection}
+                value = {descSectionCard}
+            />
 
-        <DualContent value = {dualContentVid} />
+            <DualContent value = {dualContentVid} />
 
-        <Collage data={collage} />
+            <Collage data={collage} />
 
-    </main>
-  )
+        </main>
+    )
 }
 
 export default Home

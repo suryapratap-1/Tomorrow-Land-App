@@ -21,8 +21,8 @@ const CATEGORY = {
 
 const Product = () => {
     const params = useParams()
-    console.log(params);
-    console.log(params.category);
+    // console.log(params);
+    // console.log(params.category);
     const item = CATEGORY[params.category].filter((item) => item.id == params.id)
     // const item = HomePageMensTShirt.filter((item) => item.id == params.id)
     
@@ -53,24 +53,24 @@ const Product = () => {
 
     return (
         <main className='mt-16 w-screen text-black'>
-            <section className='lg:px-20 py-12 flex flex-row gap-10'>
-                <section className='w-[65%]'>
+            <section className='lg:px-20 py-12 flex flex-col xl:flex-row gap-10'>
+                <section className=' w-full xl:w-[65%] '>
                     {
                         item.map((item, id) => (
-                            <div key={id} className='flex flex-row gap-5'>
-                                <img src={item.frontImage} className='w-[40%] h-[80vh] object-cover' alt="" />
-                                <img src={item.backImage} className='w-[55%] h-[80vh] object-cover' alt="" />
+                            <div key={id} className='no-scrollbar prodBox flex flex-row overflow-x-auto md:overflow-x-hidden gap-5'>
+                                <img src={item.frontImage} className='w-full md:w-1/2 xl:w-[40%] h-[80vh] object-cover' alt="" />
+                                <img src={item.backImage} className='w-full md:w-1/2 xl:w-[55%] h-[80vh] object-cover' alt="" />
                             </div>
                         )) 
                     }
                 </section>
-                <section className='w-[35%]'>
+                <section className='px-4 w-full lg:w-[35%]'>
                     {
                         item.map((item, id) => (
-                            <div key={id} className='flex flex-col gap-8'>
-                                <h3 className='text-3xl font-bold'>{item.title}</h3>
-                                <p className='text-xl'>Rs {item.price}</p>
-                                <p className='text-base tracking-wide'>{item.description}</p>
+                            <div key={id} className='flex flex-col gap-4 lg:gap-8'>
+                                <h3 className='text-xl md:text-3xl font-bold'>{item.title}</h3>
+                                <p className='text-lg md:text-xl'>Rs {item.price}</p>
+                                <p className=' text-sm md:text-base tracking-wide'>{item.description}</p>
                                 <div className='flex flex-col gap-3'>
                                     <p>Color</p>
                                     <div className='flex flex-row gap-3 items-center'>
@@ -93,7 +93,7 @@ const Product = () => {
                                             item.size.map((size, index) => (
                                                 <div key={index}>
                                                     <button onClick={(e) => setSizeSelected(e.target.innerText)}
-                                                        className={`px-5 py-2.5 border border-black hover:bg-black hover:text-white transition-all duration-300
+                                                        className={` px-3 md:px-5 py-1  md:py-2.5 border border-black hover:bg-black hover:text-white transition-all duration-300
                                                         ${sizeSelected == size ? 'bg-black text-white' : 'bg-transparent text-gray-500'} 
                                                     `}>
                                                         {size}
@@ -103,7 +103,7 @@ const Product = () => {
                                         }
                                     </div>
                                 </div>
-                                <div className='flex flex-row gap-6'>
+                                <div className='flex flex-col md:flex-row gap-3 md:gap-6'>
                                     {
                                         cart.some((p) => p.id == params.id ) ? 
                                         <button onClick={() => removeItem(item.id)}
@@ -120,13 +120,19 @@ const Product = () => {
                                         </button> 
                                         
                                     }
-                                    <button onClick={likeHandler} className='px-3 border border-black'>
-                                        {
-                                            like ? 
-                                            <BiSolidHeart fontSize={'2rem'}/> :
-                                            <FiHeart fontSize={'2rem'}/>
-                                        }
-                                    </button>
+
+                                    <div className='flex justify-between'>
+                                        <div className='block md:hidden'>
+                                            <p className='text-lg'>Add to wishlist</p>
+                                        </div>
+                                        <button onClick={likeHandler} className=' md:px-3 md:border border-black'>
+                                            {
+                                                like ? 
+                                                <BiSolidHeart className=' text-2xl md:text-[2rem]'/> :
+                                                <FiHeart className=' text-2xl md:text-[2rem]'/>
+                                            }
+                                        </button>
+                                    </div>
                                 </div>
 
                             </div>

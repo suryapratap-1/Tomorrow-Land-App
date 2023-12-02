@@ -6,7 +6,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/Men TShirt Black Back.webp',
       price: 6800.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-black.png", "/assets/color-offwhite.webp"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -17,7 +17,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/Men TShirt White Back.webp',
       price: 6800.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#FAEBD7", "#000"],
+      color: ["/assets/color-offwhite.webp", "/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -28,7 +28,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/Men Hoodie Black Back.webp',
       price: 12200.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag Hoodie features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000"],
+      color: ["/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -39,7 +39,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/Unity-T-shirt-Men-Black_mutsdetail_2.webp',
       price: 5000.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-black.png", "/assets/color-offwhite.webp"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -50,7 +50,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/Men Blue SweetShirt.webp',
       price: 5000.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-light-blue.webp", "/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -61,7 +61,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/skiknitsweater-_topman-JpgHighres-5.webp',
       price: 5000.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -72,7 +72,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/unityziphoodiemen-_topman-JpgHighres-5.webp',
       price: 5000.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
@@ -83,7 +83,7 @@ export const HomePageMensTShirt = [
       backImage: '/assets/unityjoggermen-fullbodyman-JpgHighres-5.webp',
       price: 5000.00,
       description: 'Designed for the People of Tomorrow, the Unity Flag T-shirt features a premium Tomorrowland Flag patch that embodies the values of the People of Tomorrow and unifies us all, no matter where we are in the world.',
-      color: ["#000", "#FAEBD7"],
+      color: ["/assets/color-black.png"],
       size: ["S", "M", "L", "XL", "XXL"],
       fileName: "HomePageMensTShirt"
     },
